@@ -112,7 +112,6 @@ add_executable(og_builder_stage src/og_builder_stage.cpp)
 add_executable(og_builder_stage_rot src/og_builder_stage_rot.cpp)
 add_executable(planner src/planner.cpp src/riskrrt.cpp)
 add_executable(controller src/controller.cpp src/riskrrt.cpp)
-#add_executable(og_builder_leg_detector src/og_builder_leg_detector.cpp)
 add_executable(goal_pub src/goal_pub.cpp)
 
 ## Add cmake target dependencies of the executable/library
@@ -123,7 +122,6 @@ add_dependencies(og_builder_stage ${riskrrt}_gencfg riskrrt_generate_messages_cp
 add_dependencies(og_builder_stage_rot ${riskrrt}_gencfg riskrrt_generate_messages_cpp)
 add_dependencies(planner ${riskrrt}_gencfg riskrrt_generate_messages_cpp)
 add_dependencies(controller ${riskrrt}_gencfg riskrrt_generate_messages_cpp)
-#add_dependencies(og_builder_leg_detector ${riskrrt}_gencfg riskrrt_generate_messages_cpp)
 add_dependencies(goal_pub ${riskrrt}_gencfg riskrrt_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
@@ -132,7 +130,6 @@ target_link_libraries(og_builder_stage ${catkin_LIBRARIES})
 target_link_libraries(og_builder_stage_rot ${catkin_LIBRARIES})
 target_link_libraries(planner ${catkin_LIBRARIES})
 target_link_libraries(controller ${catkin_LIBRARIES})
-#target_link_libraries(og_builder_leg_detector ${catkin_LIBRARIES})
 target_link_libraries(goal_pub ${catkin_LIBRARIES})
 
 #############
