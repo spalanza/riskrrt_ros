@@ -1,7 +1,0 @@
-<launch>
-  <rosparam file="$(find riskrrt)/params/riskrrt_params.yaml" command="load"/>
-  
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find riskrrt)/worlds/test/map.yaml"/>
-  
-  <node name="og_builder" pkg="riskrrt" type="og_builder" output="screen"/>
-</launch>
