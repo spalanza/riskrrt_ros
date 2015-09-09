@@ -18,27 +18,27 @@ change the planner behavior by modifying the parameters in params/riskrrt_params
 
 **provided nodes**
 
-controller: a path following node for diffrential drive robots
-            in: trajectory (riskrrt/Trajectory) 
-                robot pose (geometry_msgs/PoseWithCovarianceStamped)
-            out: controller feedback, true if robot is on trajectory (std_msgs/Bool)
-                 velocity commands (geometry_msgs/Twist)
+controller: a path following node for differential drive robots
+            subscribed topics: trajectory (riskrrt/Trajectory) 
+                               robot pose (geometry_msgs/PoseWithCovarianceStamped)
+            published topics: controller feedback, true if robot is on trajectory (std_msgs/Bool)
+                              velocity commands (geometry_msgs/Twist)
 goal_pub: automatic goal publisher
           args: pose x (m), pose y (m) with respect to map
-          out: goal (geometry_msgs/PoseStamped)
+          published topics: goal (geometry_msgs/PoseStamped)
 og_builder*: some occupany grid array publishers
              args: number of humans, human speed (m/s)
-             in: map (nav_msgs/OccupancyGrid)
-                 human odometry (nav_msgs/Odometry)
-             out: human velocity (geometry_msgs/Twist)
-                  occupancy grid array (riskrrt/OccupancyGridArray)
+             subscribed topics: map (nav_msgs/OccupancyGrid)
+                                human odometry (nav_msgs/Odometry)
+             published topics: human velocity (geometry_msgs/Twist)
+                               occupancy grid array (riskrrt/OccupancyGridArray)
 planner: the riskrrt planner
-         in: occupancy grid array (riskrrt/OccupancyGridArray)
-             goal (geometry_msgs/PoseStamped)
-             controller feedback (std_msgs/Bool)
-             robot pose (geometry_msgs/PoseWithCovarianceStamped)
-             robot odometry (nav_msgs/Odometry)
-         out: trajectory (riskrrt/Trajectory)
+         subscribed topics: occupancy grid array (riskrrt/OccupancyGridArray)
+                            goal (geometry_msgs/PoseStamped)
+                            controller feedback (std_msgs/Bool)
+                            robot pose (geometry_msgs/PoseWithCovarianceStamped)
+                            robot odometry (nav_msgs/Odometry)
+         published topics: trajectory (riskrrt/Trajectory)
 
 
 
