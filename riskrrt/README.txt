@@ -2,7 +2,7 @@
 
 $ sudo apt-get install ros-indigo-navigation
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/Spalanza/riskrrt.git
+$ git clone https://github.com/Spalanza/riskrrt_ros.git
 $ catkin_make
 
 
