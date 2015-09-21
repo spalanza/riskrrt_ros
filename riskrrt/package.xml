@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package>
   <name>riskrrt</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>The riskrrt package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="greg@todo.todo">greg</maintainer>
-
+  <maintainer email="procopio.silveira-stein@inria.fr">procopio</maintainer>
+  <maintainer email="gregoire.vignon@inria.fr">greg</maintainer>
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>TODO</license>
+  <license>BSD</license>
 
 
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
@@ -26,6 +26,8 @@
   <!-- Authors do not have to be maintianers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+  <author email="procopio.silveira-stein@inria.fr">procopio</author>
+  <author email="gregoire.vignon@inria.fr">greg</author>
 
 
   <!-- The *_depend tags are used to specify dependencies -->
