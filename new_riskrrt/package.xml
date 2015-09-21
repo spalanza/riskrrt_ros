@@ -2,7 +2,7 @@
 <package>
   <name>new_riskrrt</name>
   <version>0.0.1</version>
-  <description>The new_riskrrt metapackage</description>
+  <description>The riskrrt metapackage</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
@@ -20,13 +20,13 @@
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
   <!-- <url type="website">http://wiki.ros.org/new_riskrrt</url> -->
+  <url type="website">http://wiki.ros.org/riskrrt</url>
 
 
   <!-- Author tags are optional, mutiple are allowed, one per tag -->
   <!-- Authors do not have to be maintianers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-  <author email="procopio.silveira-stein@inria.fr">procopio</author>
   <author email="gregoire.vignon@inria.fr">greg</author>
 
 
