@@ -30,7 +30,7 @@
 
     
   <!-- RiskRRT Node-->
-  <node pkg="riskrrt" type="planner" name="planner" output="screen">
+  <node pkg="riskrrt" type="riskrrt_planner" name="riskrrt_planner" output="screen">
      <remap from="/odom" to="/robot_0/odom" />
   </node>
   
