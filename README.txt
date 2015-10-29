@@ -32,7 +32,7 @@ og_builder*: some occupany grid array publishers
                                 human odometry (nav_msgs/Odometry)
              published topics: human velocity (geometry_msgs/Twist)
                                occupancy grid array (riskrrt/OccupancyGridArray)
-planner: the riskrrt planner
+riskrrt_planner: the riskrrt planner
          subscribed topics: occupancy grid array (riskrrt/OccupancyGridArray)
                             goal (geometry_msgs/PoseStamped)
                             controller feedback (std_msgs/Bool)
