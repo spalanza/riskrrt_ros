@@ -644,6 +644,6 @@ void RRT::goalCallback(const geometry_msgs::PoseStamped::ConstPtr& msg){
 }
   
 void RRT::initGoalSub(){
-  goalSubscriber = nodeHandle.subscribe("/goal", 1, &RRT::goalCallback, this);
+  goalSubscriber = nodeHandle.subscribe("goal", 1, &RRT::goalCallback, this);
 }
 //end of subscribers initializations and callbacks
