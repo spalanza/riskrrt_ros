@@ -10,6 +10,8 @@ $ catkin_make
 **running the examples scenarios**
 
 some examples scenarios (using stage) are provided in worlds/
+run goal node setting eg. x = 1, y = 10 with
+$ rosrun riskrrt goal_pub 1 10
 run the scenario with
 $ roslaunch riskrrt scenario_name.launch
 change the planner behavior by modifying the parameters in params/riskrrt_params.yaml
