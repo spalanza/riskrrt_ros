@@ -23,7 +23,7 @@ int main(int argc, char **argv)
   ros::Rate loop_rate(100);
   
   
-  while(goal_pub.getNumSubscribers() == 0){
+  while(goal_pub.getNumSubscribers() == 0 && ros::ok()){
     loop_rate.sleep();
   }
   
